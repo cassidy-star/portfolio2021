@@ -17,17 +17,18 @@ body, html {
 
   /*Here are the hero image commands for it to follow  */
 .hero-image {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/hero.JPG");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/myhero.JPG");
 	height: 90%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
+  position: relative;
+  
   }
 .heroname{
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 60px;
-  color: white;
+  color:#66fcf1;
   text-align: center;
   padding-top:30%;
 }
@@ -100,7 +101,7 @@ body, html {
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: black;
+  color:green;
 }
 
 .dropdown:hover .dropdown-content {
@@ -111,7 +112,7 @@ body, html {
 /*This is my css code for my about  */
 .aboutcontainer{
   position: relative;
-  height: 100vh;
+  height: 78vh;
   text-align: center;
 
 }
@@ -136,17 +137,21 @@ body, html {
 .abouth1{
   font-family: 'Parisienne', cursive;
   font-size: 40px;
-  color:darkgreen;
+  color:#66fcf1;
 }
 .aboutbutton{
-  text-emphasis-color: green;
+ 
   color: white;
-  border-radius: 10%;
-  border-top: none;
-  border-right:none;
-  border-left:none;
+  padding-left: 30px;
+  font-size: 10px;
+  padding-right: 30px;
   background-color: white;
-  border-bottom: black;
+  border-color: #66fcf1;
+
+}
+.aboutbutton a{
+  color:#66fcf1;
+  font-size:10px;
 }
 .col-8{
   padding:20em;
@@ -158,9 +163,17 @@ body, html {
 
 
 #myskills{
-  background: #16384c;
-  height: 130vh;
-  position: relative;
+  background: #1f2833;
+  height: 80vh;
+  
+}
+
+.myworkh1{
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Fjalla One', sans-serif;
+     padding:50px;
+   color: #66fcf1;
 }
 .skillscontainer{
   position: relative;
@@ -172,7 +185,7 @@ body, html {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
-  top: 20rem;
+  top: 4rem;
 
 }
 .skillscontainer .card{
@@ -183,6 +196,8 @@ body, html {
   margin: 30px 10px;
   box-shadow: 0.5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.9s ease-in-out;
+  padding-bottom: 50px;
+
 }
 
 .skillscontainer .card:hover{
@@ -197,7 +212,7 @@ body, html {
   left:20px;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-
+ 
 
 }
 
@@ -225,15 +240,100 @@ body, html {
 }
 
 .imagebanner{
-  background-image: url("./images/banner.JPG");
+  background-image: url("./images/banners.JPG");
   background-attachment: fixed;     
   background-size: cover;
   height: 50vh;
 }
 
+.mint{
+  height: 90vh;
+  background-color:  #45a29e;
+}
+.edu{
+	margin: 5%;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 30px;
+  color:#45a29e;
+}
+.education{
+  margin:4%;
+}
+.education a {
+  color: #45a29e;
+}
+#myedutext{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  
+}
+.year20{
+  font-size:55px;
+  font-weight: 300;
+  font-family: 'Gorditas', cursive;
+  color: white;
+  padding: 10px;
 
+}
+ .year19{
+  font-size:55px;
+  font-weight: 200;
+  font-family: 'Gorditas', cursive;
+  color: white;
+  padding: 20px;
 
+}
+.year18{
+  font-size:55px;
+  font-weight: 300;
+  font-family: 'Gorditas', cursive;
+  color: #1f2833;
+  padding: 20px;
 
+}
+.year17{
+  font-size:55px;
+  font-weight: 300;
+  font-family: 'Gorditas', cursive;
+  color: white;
+  padding: 20px;
+} 
+.sub{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+#contact{
+  background-color:#1f2833;  
+} 
+.contacth2{
+ font-size: 50px;
+ font-family: 'Fjalla One', sans-serif;
+ text-align: center;
+ padding:20px;
+ padding-top: 40px;
+ color: #66fcf1;
+ 
+}
+#contactblock2{
+ background-color: #c5c6c7;
+}
+.icons{
+	text-align: center;
+}
+.icons a{
+	color:white;
+}
+.icons :hover{
+  color: #66fcf1;
+}
+footer{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 25px;
+}
 
 
 
