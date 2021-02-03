@@ -147,11 +147,12 @@ body, html {
   font-size: 10px;
   padding-right: 30px;
   background-color: white;
-  border-color: #66fcf1;
+  border-color: #1f2833;
+  border-radius: 12px;
 
 }
 .aboutbutton a{
-  color:#66fcf1;
+  color:black;
   font-size:10px;
 }
 .col-8{
@@ -432,10 +433,34 @@ footer{
     float: right;
     display: block;
   }
-}
+
 
 html {
   overflow-x: hidden;
+}
+
+.heroname{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 50px;
+  color:#66fcf1;
+  text-align: center;
+  
+  padding-top:30%;
+}
+.aboutcontainer{
+  position: relative;
+  height: 145vh;
+ 
+
+}
+.aboutparagraph{
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  padding: 25px;
+  float: left;
+  align: left;
+
+  
 }
  .skillscontainer{
   position: relative;
@@ -444,7 +469,7 @@ html {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  display: grid;
+  display: inline;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   top: 4rem;
@@ -503,7 +528,7 @@ html {
  
 
 
-
+}
 
 
 
