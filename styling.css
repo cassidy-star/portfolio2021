@@ -18,7 +18,7 @@ body, html {
   /*Here are the hero image commands for it to follow  */
 .hero-image {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/myhero.JPG");
-	height: 90%;
+	height: 92%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -26,14 +26,45 @@ body, html {
   
   
   }
-.heroname{
+  .wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+/* .typing-demo{
   font-family: 'Fjalla One', sans-serif;
   font-size: 70px;
   color:#66fcf1;
   padding-left: 8%;
   padding-top:15%;
+} */
+.typing-demo {
+  width: 13ch;
+  animation: typing 1.5s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 6em;
+  color:#66fcf1;
+
 }
 
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  0% {
+    border-color: transparent
+  }
+}
 /* This is all my css regaurding my navigation bar  */
 /* This allows the navbar to overflow and how it looks and acts */
 .topnav {
@@ -49,8 +80,9 @@ body, html {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 20px;
-  font-family: 'Permanent Marker', cursive;
-}
+  font-weight: 400;
+
+  font-family: 'Fjalla One', sans-serif;}
 
 .active {
   background-color: #4CAF50;
@@ -96,7 +128,7 @@ body, html {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #45a29e;
+  background-color:#66fcf1;
   color: white;
 }
 
@@ -113,8 +145,9 @@ body, html {
 /*This is my css code for my about  */
 .aboutcontainer{
   position: relative;
-  height: 78vh;
+  height: 100vh;
   text-align: center;
+  
 
 }
 
@@ -122,6 +155,7 @@ body, html {
     width:100%;
     height:auto ;
     border-radius: 0%;
+
 }
 .aboutbutton{
     text-align: center;
@@ -155,18 +189,37 @@ body, html {
   color:black;
   font-size:10px;
 }
-.col-8{
+.col-sm-8{
   padding:20em;
   padding-right: 125em;
+
 }
 
+.imagebanner1{
+  background-image: url("./images/image1.JPG");
+  background-attachment: fixed;     
+  background-size: cover;
+  height: 50vh;
+  font-family: 'Raleway', sans-serif;
+  filter:brightness(90%);
+  color: black;
+ 
+  text-align: center;
+}
+.image1text{  
+  padding-right: 10%;
+  padding-top: 10%;
+  font-size: 18px; 
+  font-family: 'Raleway', sans-serif;
+  width: 55%;
+  float: right;
 
-
-
+  
+}
 
 #myskills{
   background: #1f2833;
-  height: 80vh;
+  height: 100vh;
   
 }
 
@@ -174,8 +227,8 @@ body, html {
   text-align: center;
   font-size: 50px;
   font-family: 'Fjalla One', sans-serif;
-     padding:50px;
-   color: #66fcf1;
+  padding:50px;
+  color: #66fcf1;
 }
 .skillscontainer{
   position: relative;
@@ -247,21 +300,39 @@ body, html {
   background-size: cover;
   height: 50vh;
 }
+.workbutton{
+  color: white;
+  padding-left: 30px;
+  font-size: 10px;
+  padding-right: 30px;
+  background-color: white;
+  border-color: #1f2833;
+  border-radius: 12px;
 
-.mint{
-  height: 90vh;
-  background-color:  #45a29e;
 }
+
+
 .edu{
-	margin: 5%;
+ 
   font-family: 'Fjalla One', sans-serif;
   font-size: 50px;
   text-align: center;
-  padding-top: 30px;
+ 
   color:#45a29e;
 }
+/* .spacer{
+  background-color: green;
+  height: 70px;
+} */
 .education{
-  margin:8%;
+  
+  height: 85vh;
+  margin-top:5%;
+	margin-left: 5%;
+	margin-right: 5%;
+  padding-top: 100px;
+  width: 85%;
+  /* margin:8%; */
 }
 .education a {
   color: #45a29e;
@@ -271,43 +342,13 @@ body, html {
   font-size: 15px;
   
 }
-.year20{
-  font-size:55px;
-  font-weight: 300;
-  font-family: 'Gorditas', cursive;
-  color: white;
-  padding: 10px;
-
-}
- .year19{
-  font-size:55px;
-  font-weight: 200;
-  font-family: 'Gorditas', cursive;
-  color: white;
-  padding: 20px;
-
-}
-.year18{
-  font-size:55px;
-  font-weight: 300;
-  font-family: 'Gorditas', cursive;
-  color: #1f2833;
-  padding: 20px;
-
-}
-.year17{
-  font-size:55px;
-  font-weight: 300;
-  font-family: 'Gorditas', cursive;
-  color: white;
-  padding: 20px;
-} 
-.sub{
-  font-family: 'Raleway', sans-serif;
-  font-size: 25px;
+.contactcontainer{
+  height: 65vh;
 }
 #contact{
+  padding-top: 75px;
   background-color:#1f2833;  
+  height: 65vh;
 } 
 .contacth2{
  font-size: 50px;
@@ -319,7 +360,12 @@ body, html {
  
 }
 #contactblock2{
- background-color: #c5c6c7;
+ background-color: white;
+ padding-top: 60px;
+ 
+}
+.contactNo{
+  z-index: 4;
 }
 .icons{
 	text-align: center;
@@ -336,6 +382,159 @@ footer{
   font-size: 15px;
   padding-top: 25px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+  text-align: center;
+  color: black;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  padding: 10px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: #22A7F0;
+}
+
+.container {
+  height: auto;
+  font-family: 'Cabin', sans-serif;
+  margin: 0 auto;
+  display: block;
+  background: white;
+}
+
+form {
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  width: 60%;
+  margin: 0 auto;
+  
+}
+
+.feedback-input {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 0;
+  margin-right: 0;
+  line-height: 22px;
+  background-color: none;
+  margin-bottom: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 2px solid  #66fcf1;
+  ;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.feedback-input:focus {
+  box-shadow: 0;
+  color: #3498db;
+  transition: .4s ease;
+  outline: none;
+  border-bottom: 2px solid black;
+  padding: 13px 13px 13px 13px;
+}
+
+.focused {
+  color: #30aed6;
+  border: #30aed6 solid 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#button-blue {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  width: 40%;
+  border: none;
+  cursor: pointer;
+  background-color: #22A7F0;
+  color: white;
+  font-size: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: -4px;
+  font-weight: 400;
+  transition: .3s ease;
+  border-radius: 12px;
+  text-align: center;
+  margin-left:95px;
+}
+
+#button-blue:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  background: #22A7F0;
+  
+}
+
+.submit:hover {
+  color: #22A7F0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -365,15 +564,16 @@ html {
 }
 .aboutcontainer{
   position: relative;
-  height: 145vh;
+  height: 185vh;
  
 
 }
 .aboutparagraph{
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
-  padding: 25px;
+  padding: 15px;
   float: left;
+  position: relative;
   
 
   
