@@ -145,7 +145,7 @@ body, html {
 /*This is my css code for my about  */
 .aboutcontainer{
   position: relative;
-  height: 100vh;
+  height: 88vh;
   text-align: center;
   
 
@@ -209,7 +209,7 @@ body, html {
 .image1text{  
   padding-right: 10%;
   padding-top: 10%;
-  font-size: 18px; 
+  font-size: 20px; 
   font-family: 'Raleway', sans-serif;
   width: 55%;
   float: right;
@@ -219,7 +219,7 @@ body, html {
 
 #myskills{
   background: #1f2833;
-  height: 100vh;
+  height: 140vh;
   
 }
 
@@ -237,7 +237,6 @@ body, html {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
   top: 4rem;
@@ -252,11 +251,13 @@ body, html {
   box-shadow: 0.5px 20px rgba(0, 0, 0, 0.5);
   transition: 0.9s ease-in-out;
   padding-bottom: 50px;
+  padding-top: 50px;
+
 
 }
 
 .skillscontainer .card:hover{
-  height: 250px;
+  height: 300px;
 
 }
 
@@ -301,8 +302,9 @@ body, html {
   height: 50vh;
 }
 .workbutton{
-  color: white;
-  padding-left: 30px;
+  color: black;
+  padding: 15px;
+
   font-size: 10px;
   padding-right: 30px;
   background-color: white;
@@ -325,9 +327,8 @@ body, html {
   height: 70px;
 } */
 .education{
-  
   height: 85vh;
-  margin-top:5%;
+  margin-top:2%;
 	margin-left: 5%;
 	margin-right: 5%;
   padding-top: 100px;
@@ -366,6 +367,11 @@ body, html {
 }
 .contactNo{
   z-index: 4;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  
 }
 .icons{
 	text-align: center;
@@ -384,21 +390,6 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h3 {
   text-align: center;
   color: black;
@@ -412,7 +403,7 @@ h3 a {
   color: #22A7F0;
 }
 
-.container {
+.containerform {
   height: auto;
   font-family: 'Cabin', sans-serif;
   margin: 0 auto;
@@ -526,20 +517,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -564,7 +541,7 @@ html {
 }
 .aboutcontainer{
   position: relative;
-  height: 185vh;
+  height: 220vh;
  
 
 }
@@ -576,6 +553,31 @@ html {
   position: relative;
   
 
+  
+}
+.imagebanner1{
+  background-image: url("./images/image1.JPG");
+  background-attachment: fixed;     
+  background-size: cover;
+  height: 40vh;
+  font-family: 'Raleway', sans-serif;
+  filter:brightness(90%);
+  color: black;
+ 
+  text-align: center;
+}
+.image1text{  
+  padding-top: 80px;
+
+  font-size: 15px; 
+  font-family: 'Raleway', sans-serif;
+  width: 85%;
+ 
+  
+}
+#myskills{
+  background: #1f2833;
+  height: 300vh;
   
 }
  .skillscontainer{
@@ -642,6 +644,15 @@ html {
   transition-delay: 0.3s;
 }
  
+.education{
+  height: 185vh;
+  margin-top:2%;
+	margin-left: 5%;
+	margin-right: 5%;
+  padding-top: 100px;
+  width: 85%;
+  /* margin:8%; */
+}
 
 
 }
@@ -661,7 +672,7 @@ html {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -680,4 +691,17 @@ html {
     width: 100%;
     text-align: left;
   }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/myhero.JPG");
+    height: 92%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 768%;
+    
+    
+    }
+
 }
